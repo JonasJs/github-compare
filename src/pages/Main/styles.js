@@ -1,16 +1,13 @@
-import React from 'react';
 import styled from 'styled-components';
 
-import Logo from '../assets/images/logo.png';
-
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
 `;
 
-const Form = styled.form`
+export const Form = styled.form`
   width: 100%;
   max-width: 320px;
   margin-top: 20px;
@@ -43,16 +40,3 @@ const Form = styled.form`
     }
   }
 `;
-
-const Main = () => (
-  <Container>
-    <img src={Logo} alt="Github Compare" />
-
-    <Form>
-      <input type="text" placeholder="Usuário/repositório" />
-      <button type="submit">ok</button>
-    </Form>
-  </Container>
-);
-
-export default Main;
